@@ -128,20 +128,17 @@ function Sidebar() {
         <p className="ms-2 text-white">Savings</p>
         </div>
         </Link>
-        {/* <ul className={`dropdown-menu ${styles.subnav}`} aria-labelledby="navbarDropdownMenuLink"> */}
         <ul className={`${show}`}>
 
             <li><Link className="dropdown-item" >
              
               <div className="d-flex">
-              {/* <p className="ms-2 text-white">&#9900;</p> */}
         <p className="ms-2 text-white"> View Savings Account</p>
         </div>
               </Link></li>
             <li><Link className="dropdown-item" >
              
               <div className="d-flex">
-              {/* <p className="ms-2 text-white">&#9900;</p> */}
         <p className="ms-2 text-white">  Add Investment / <br/> Bulk Savingd transaction <br/>/ Account</p>
         </div>
               
@@ -149,7 +146,6 @@ function Sidebar() {
             <li><Link className="dropdown-item" to="/invest" >
              
               <div className="d-flex">
-        {/* <p className="ms-2 text-white">&#9900;</p> */}
         <p className="ms-2 text-white">  Investment Chart</p>
         </div>
               
@@ -157,7 +153,6 @@ function Sidebar() {
             <li><Link className="dropdown-item" >
            
               <div className="d-flex">
-              {/* <p className="ms-2 text-white">&#9900;</p> */}
         <p className="ms-2 text-white">    Investment Report</p>
         </div>
               
@@ -165,14 +160,12 @@ function Sidebar() {
             <li><Link className="dropdown-item" >
               
               <div className="d-flex">
-              {/* <p className="ms-2 text-white">&#9900;</p> */}
         <p className="ms-2 text-white"> Cash Safe</p>
         </div>
               </Link></li>
             <li><Link className="dropdown-item" >
              
               <div className="d-flex">
-              {/* <p className="ms-2 text-white">&#9900;</p> */}
         <p className="ms-2 text-white">  Staff Transaction</p>
         </div>
               
@@ -181,7 +174,6 @@ function Sidebar() {
             <li><Link className="dropdown-item" >
              
               <div className="d-flex">
-              {/* <p className="ms-2 text-white">&#9900;</p> */}
         <p className="ms-2 text-white">  Approved report</p>
         </div>
               </Link></li>
@@ -208,7 +200,7 @@ function Sidebar() {
         </Link>
         </li>
         <li className="nav-item ">
-        <Link onClick={()=> submenu1()} to="/validation"> 
+        <Link onClick={()=> submenu1()} > 
         <div className="d-flex mb-2">
         <svg className={`${styles.icon}`}>
           <use href={Icon + "#verification"} />
@@ -219,9 +211,8 @@ function Sidebar() {
 
  <ul className={`${show1}`}>
 
-<li><Link className="dropdown-item" >
+<li><Link className="dropdown-item" to="/validation">
  
-  {/* <p className="ms-2 text-white">&#9900;</p> */}
 <p className="ms-2 text-white">  Approved report</p>
   </Link></li>
 </ul>

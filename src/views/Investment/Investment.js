@@ -40,7 +40,7 @@ function Aside() {
         
          <section className={`d-flex flex-wrap`}>
           {data.map(data => 
-              <div className="p-5"> 
+              <div className={styles.component}> 
                 <div className={`d-flex align-items-center ${styles.contain}`}>
                 <div className={`${styles.avatar}`}></div>
                 <div>
@@ -54,7 +54,7 @@ function Aside() {
           )}
           </section>
 
-          <div className="container">
+          <div className="container-fluid">
 <div className="d-flex justify-content-center align-items-center">
     <p className="me-2">Generate Below Charts</p>
    <div className={`${styles.select}`}>
